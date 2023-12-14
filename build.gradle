@@ -19,6 +19,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'com.netflix.graphql.dgs', name: 'graphql-dgs', version: '8.2.0'
+	implementation 'net.datafaker:datafaker:1.7.0'
 	runtimeOnly group: 'com.netflix.graphql.dgs', name: 'graphql-dgs-spring-boot-starter', version: '8.2.0'
 	runtimeOnly group: 'com.netflix.graphql.dgs', name: 'graphql-dgs-extended-scalars', version: '8.2.0'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
