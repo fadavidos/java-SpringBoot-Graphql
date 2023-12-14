@@ -18,8 +18,6 @@ public class FakeHelloDataResolver {
 
     @DgsQuery
     public Hello oneHello(){
-        System.out.println(String.format("FakeHelloDataSource.HELLO_LIST.size(): %s", FakeHelloDataSource.HELLO_LIST.size()));
-        System.out.println(String.format("ThreadLocalRandom.current().nextInt(0,20): %s", ThreadLocalRandom.current().nextInt(0, 20)));
         return FakeHelloDataSource.HELLO_LIST.get(
                 Math.abs(ThreadLocalRandom.current().nextInt(0, FakeHelloDataSource.HELLO_LIST.size()))
         );

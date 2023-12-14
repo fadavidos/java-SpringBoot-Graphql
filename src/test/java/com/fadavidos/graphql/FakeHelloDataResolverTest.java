@@ -1,6 +1,5 @@
 package com.fadavidos.graphql;
 
-import com.netflix.graphql.dgs.DgsQuery;
 import com.netflix.graphql.dgs.DgsQueryExecutor;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.commons.util.StringUtils;
