@@ -2,7 +2,7 @@
 
 ## Tools
 
-We will use Altair
+We will use [Altair](https://altairgraphql.dev/#download)
 
 ### Query example:
 
