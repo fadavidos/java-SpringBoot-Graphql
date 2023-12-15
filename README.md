@@ -52,3 +52,32 @@ query books {
 ```
 
 Or you can remove the `(author: "hi")` part to get all books.
+
+We can also query using variables and default values, in this case the `releaseYear` has a default value (`2020`)
+
+```
+query booksByRelease($releaseYear: Int = 2020, $releasePrintedEdition: Boolean) {
+  booksByReleased(
+    releasedInput: {
+      year: $releaseYear
+      printedEdition: $releasePrintedEdition
+    }
+  ) {
+    title
+    released {
+      year
+    }
+    author {
+      name
+    }
+  }
+}
+```
+
+In this case you will have to send the variables, you can define them like this:
+
+```
+{
+  "releasePrintedEdition": true
+}
+```
