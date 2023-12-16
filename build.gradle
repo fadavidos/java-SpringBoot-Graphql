@@ -30,3 +30,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+generateJava {
+	packageName = 'com.fadavidos.graphql'
+	generateClient = true
+}
